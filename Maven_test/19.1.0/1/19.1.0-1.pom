@@ -7,6 +7,16 @@
   <version>1</version>
   <description>POM was created from install:install-file</description>
   <build>
+        <resources>
+            <resource>
+                <directory>${basedir}</directory>
+                <includes>
+                    <include>*</include>
+                    <include>*</include>
+                </includes>
+            </resource>
+        </resources>
+        <testResources>
            <testResource>
                 <directory>${basedir}/src/test/resources</directory>
                 <includes>
@@ -14,6 +24,7 @@
                     <include>*</include>
                 </includes>
             </testResource>
+       </testResources>
   </build>
 
 </project>
